@@ -29,8 +29,8 @@ WORKDIR /tmp
 #COPY hack/install.sh hack/tool-versions.sh ./
 #COPY hack/installers installers
 
-RUN ./install.sh helm && \
-    INSTALL_PATH=/usr/local/bin ./install.sh kustomize
+#RUN ./install.sh helm && \
+    #INSTALL_PATH=/usr/local/bin ./install.sh kustomize
 
 ####################################################################################################
 # Argo CD Base - used as the base for both the release and dev argocd images
