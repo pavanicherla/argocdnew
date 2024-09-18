@@ -130,7 +130,8 @@ ARG GIT_COMMIT
 # Final image
 ####################################################################################################
 FROM argocd-base
-COPY --from=argocd-build /go/src/github.com/argoproj/argo-cd/dist/argocd* /usr/local/bin/
+COPY --from=argocd-build /go/src/github.com/argoproj/argo-cd/dist/argocd* 
+#/usr/local/bin/
 
 USER root
 RUN ln -s /usr/local/bin/argocd /usr/local/bin/argocd-server && \
