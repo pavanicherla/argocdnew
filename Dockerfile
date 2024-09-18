@@ -12,7 +12,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     openssh-server \
     nginx \
     unzip \
-    curl \
     fcgiwrap \
     git \
     git-lfs \

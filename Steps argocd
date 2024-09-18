@@ -1,0 +1,14 @@
+create a ec2 instance in aws with 4cpus and 100GiB 
+---->install docker
+--->Install docker and create a directory "mkdir argocd && cd argocd"
+--->type this command "wget https://github.com/argoproj/argo-cd/archive/refs/tags/v2.7.2.tar.gz"
+--->type this command "tar -zxvf v2.7.2.tar.gz"
+-->type this command "ls -ltrh"
+--->type this command "cd argocd-cd-v2.7.2/"
+--->type this command "ls -ltrh"
+--->Type this command "docker build -t argoproj/argocd:v2.7.2_v3 ."
+--->enter "docker images"
+--->Type "docker login"( this will ask for username and pwd and you will be successfully logged in
+--->Type "docker tag argocd:v2.7.2_v3 pavanicherla/argocd:v2.7.2_v3"(This command will push utilityapp:v2.0.1-f into my account by creating a repository with same name)
+13)Type docker images (this command checks whether the  pavanicherla/argocd:v2.7.2_v3 is in the docker images or not
+14)Type docker push  pavanicherla/argocd:v2.7.2_v3( this will push docker image to docker hub in your account)
