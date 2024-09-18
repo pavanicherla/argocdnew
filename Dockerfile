@@ -118,13 +118,13 @@ ARG GIT_TAG
 ARG BUILD_DATE
 ARG GIT_TREE_STATE
 ARG GIT_COMMIT
-RUN GIT_COMMIT=$GIT_COMMIT \
-    GIT_TREE_STATE=$GIT_TREE_STATE \
-    GIT_TAG=$GIT_TAG \
-    BUILD_DATE=$BUILD_DATE \
-    GOOS=$TARGETOS \
-    GOARCH=$TARGETARCH \
-    make argocd-all
+#RUN GIT_COMMIT=$GIT_COMMIT \
+    #GIT_TREE_STATE=$GIT_TREE_STATE \
+    #GIT_TAG=$GIT_TAG \
+    #BUILD_DATE=$BUILD_DATE \
+    #GOOS=$TARGETOS \
+    #GOARCH=$TARGETARCH \
+    #make argocd-all
 
 ####################################################################################################
 # Final image
