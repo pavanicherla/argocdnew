@@ -91,7 +91,7 @@ COPY ["ui/package.json", "ui/yarn.lock", "./"]
 RUN yarn install --network-timeout 200000 && \
     yarn cache clean
 
-COPY ["ui/", "."]
+#COPY ["ui/", "."]
 
 ARG ARGO_VERSION=latest
 ENV ARGO_VERSION=$ARGO_VERSION
