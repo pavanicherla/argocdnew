@@ -130,7 +130,7 @@ ARG GIT_COMMIT
 # Final image
 ####################################################################################################
 FROM argocd-base
-COPY --from=argocd-build /go/src/github.com/argoproj/argo-cd/dist/argocd* 
+#COPY --from=argocd-build /go/src/github.com/argoproj/argo-cd/dist/argocd* 
 #/usr/local/bin/
 
 USER root
